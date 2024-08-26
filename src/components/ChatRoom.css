@@ -1,0 +1,121 @@
+/* src/components/ChatRoom.css */
+
+.chat-room {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  
+  .chat-header {
+    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    display: inline-block;
+    max-width: 75%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    position: relative;
+  }
+  
+  .message.own {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 20px 20px 0 20px;
+  }
+  
+  .message:not(.own) {
+    align-self: flex-start;
+    background-color: #f1f0f0;
+    color: #000000;
+    border-radius: 20px 20px 20px 0;
+  }
+  
+  .message-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sender-name {
+    font-size: 0.75em;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .timestamp {
+    font-size: 0.75em;
+    color: gray;
+    margin-top: 5px;
+    align-self: flex-end;
+  }
+  
+  .chat-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff;
+    align-items: center;
+  }
+  
+  .chat-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .chat-send-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #007bff; /* 파란색 버튼 */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .chat-send-button:hover {
+    background-color: #0056b3; /* 파란색 버튼 호버 효과 */
+  }
+  
+  .chat-input-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat-input-icons img {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+  
